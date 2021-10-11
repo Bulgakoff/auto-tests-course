@@ -12,7 +12,8 @@ try:
     browser.get(link)
     browser.find_element_by_name('firstname').send_keys('Алексей')
     # time.sleep(1)
-    browser.find_element_by_css_selector('[placeholder="Enter last name"]').send_keys('Булгаков')
+    browser.find_element_by_css_selector\
+        ('[placeholder="Enter last name"]').send_keys('Булгаков')
     # time.sleep(1)
     browser.find_element_by_xpath('//input[@name="email"]').send_keys("qwesd@ya.com")
     # time.sleep(1)
